@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Aplicación de control de actividades diarias</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="app.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Control de actividades diarias</h1>
+    <div class="form-group">
+      <label for="actividad">Actividad</label>
+      <input type="text" class="form-control" id="actividad" placeholder="Ingrese la actividad">
+    </div>
+    <div class="form-group">
+      <label for="fecha">Fecha</label>
+      <input type="date" class="form-control" id="fecha">
+    </div>
+    <div class="form-group">
+      <label for="hora">Hora</label>
+      <input type="time" class="form-control" id="hora">
+    </div>
+    <button type="button" class="btn btn-primary" id="btn-registrar">Registrar</button>
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Actividad</th>
+          <th>Fecha</th>
+          <th>Hora</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody id="tbody-actividades"></tbody>
+    </table>
+  </div>
+</body>
+</html>
