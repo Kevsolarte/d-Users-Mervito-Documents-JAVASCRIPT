@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Control de inventario de vehículos</title>
+</head>
+<body>
+  <h1>Control de inventario de vehículos</h1>
+
+  <form action="control.php" method="post">
+    <label for="descripcion">Descripción:</label>
+    <input type="text" id="descripcion" name="descripcion" required>
+
+    <label for="imagen">Imagen:</label>
+    <input type="file" id="imagen" name="imagen" accept="image/jpeg, image/png">
+
+    <label for="marca">Marca:</label>
+    <input type="text" id="marca" name="marca" required>
+
+    <label for="modelo">Modelo:</label>
+    <input type="text" id="modelo" name="modelo" required>
+
+    <label for="tipo">Tipo:</label>
+    <select id="tipo" name="tipo">
+      <option value="auto">Automóvil</option>
+      <option value="camioneta">Camioneta</option>
+      <option value="motocicleta">Motocicleta</option>
+    </select>
+
+    <label for="año">Año:</label>
+    <input type="number" id="año" name="año" required>
+
+    <button type="submit">Registrar</button>
+  </form>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Descripción</th>
+        <th>Imagen</th>
+        <th>Marca</th>
+        <th>Modelo</th>
+        <th>Tipo</th>
+        <th>Año</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+</body>
+</html>
